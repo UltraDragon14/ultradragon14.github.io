@@ -1,0 +1,115 @@
+.nav li {
+  float: left;
+}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #400f18;
+}
+
+.nav a {
+ display: block;
+ 	font-family: 'Space Grotesk', sans-serif;
+  color: #f5b433;
+  text-align: center;
+  padding: 14px 16px;
+  text-transform: uppercase; /* Optional for a bold look */
+  letter-spacing: 0.5px; /* Adds a sleek touch */
+  text-decoration: none;
+}
+
+body {
+  color: #f5b433;
+  background: #261014;
+  font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+#controls {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#colorSelector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.color-option {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.color-option.selected {
+    border-color: black;
+}
+#zoomControls {
+    display: flex;
+    gap: 5px;
+}
+#zoomControls button {
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#mapContainer {
+    width: 70%;
+    height: 500px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+}
+#mapContainer:active {
+    cursor: grabbing;
+}
+#mapZoom {
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#uploadedMap {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+#markers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.marker.selected {
+    border: 2px solid yellow;
+}
+#notes {
+    width: 30%;
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
