@@ -93,8 +93,8 @@ body {
     height: 100%;
 }
 .marker {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -102,7 +102,7 @@ body {
     border: 2px solid transparent;
 }
 .marker.selected {
-    border: 2px solid yellow;
+    border: 2px solid white;
 }
 #notes {
     width: 30%;
