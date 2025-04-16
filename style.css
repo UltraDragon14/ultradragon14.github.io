@@ -60,15 +60,18 @@ body {
     cursor: pointer;
 }
 #mapContainer {
-    width: 70%;
+    resize: both;
+    overflow: auto;
+    width: 600px;
     height: 500px;
+    min-width: 200px;
+    min-height: 200px;
     border: 1px solid #ccc;
-    overflow: hidden;
     position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
     cursor: grab;
-}
-#mapContainer:active {
-    cursor: grabbing;
 }
 #mapZoom {
     transform-origin: top left;
